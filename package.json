@@ -1,0 +1,14 @@
+{
+  "name": "eslint-test",
+  "version": "1.0.0",
+  "description": "eslint demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint index.js"
+  },
+  "keywords": [
+    "eslint"
+  ],
+  "author": "huazihear",
+  "license": "ISC"
+}
