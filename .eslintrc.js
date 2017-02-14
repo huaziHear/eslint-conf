@@ -8,19 +8,19 @@ module.exports ={
         "$": true                                 //zepto
     },
     "parserOptions": {
-        "ecmaVersion": 6,
-        "sourceType": "module",
-        "ecmaFeatures": {
-            "jsx": true
-        }
+        "ecmaVersion": 5,
+        "sourceType": "module"
     },
     "env": {
-        "browser": true,
-        "node": true
+        "node": true,
+        "es6": true
     },
+    "plugins": [
+        "promise"
+    ],
     "rules": {
         //警告
-         "quotes": [1, "single"],                  //建议使用单引号
+        "quotes": [1, "single"],                  //建议使用单引号
         // "no-inner-declarations": [1, "both"],     //不建议在{}代码块内部声明变量或函数
         "no-extra-boolean-cast": 1,               //多余的感叹号转布尔型
         "no-extra-semi": 1,                       //多余的分号
@@ -29,6 +29,16 @@ module.exports ={
         "no-use-before-define": [1, "nofunc"],    //使用前未定义
         "complexity": [1, 10],                    //圈复杂度大于10 警告
         "no-alert": 1,                            //alert警告
+        //Promise相关
+        "promise/always-return": "error",
+        "promise/no-return-wrap": "error",
+        "promise/param-names": "error",
+        "promise/catch-or-return": "error",
+        "promise/no-native": "off",
+        "promise/no-nesting": "warn",
+        "promise/no-promise-in-callback": "warn",
+        "promise/no-callback-in-promise": "warn",
+        "promise/avoid-new": "warn",
 
         //常见错误
         "comma-dangle": [2, "never"],             //定义数组或对象最后多余的逗号
@@ -79,4 +89,4 @@ module.exports ={
         "no-warning-comments": [2, { "terms": ["todo", "fixme", "any other term"], "location": "anywhere" }],//标记未写注释
         "curly": 2                                //if、else、while、for代码块用{}包围
     }
-}
+};

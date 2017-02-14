@@ -41,9 +41,17 @@ JSON.stringify(result)
 
 `````
 
+### 插件和扩展
+
+eslint基本配置中可以设置plugin字段来引入第三方的检测,比如eslint-plugin-promise.在使用Promise时候需要在env中添加es6:true字段.
+具体的配置在Github中查询
+
 ### 参考资料
 
 http://eslint.org/
+
 http://eslint.cn/docs/rules/
+
 http://www.jianshu.com/p/1682b91756b1
+
 http://morning.work/page/maintainable-nodejs/getting-started-with-eslint.html
