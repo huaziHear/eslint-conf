@@ -24,7 +24,7 @@ Configuration parameters and interpretation of Eslint
 
 进入此链接 http://eslint.cn/docs/rules/  在控制台执行脚本,即可打印出json字符串
     
-<code>
+`````
 var domlist = $('.inuse-rules .rule-zh td p'),
     result = {},
     temp = [];
@@ -38,4 +38,4 @@ for(var i=0;i<temp.length;i++){
 }
 
 JSON.stringify(result)
-</code>
+`````
