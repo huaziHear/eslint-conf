@@ -44,6 +44,9 @@ JSON.stringify(result)
 ### 参考资料
 
 http://eslint.org/
+
 http://eslint.cn/docs/rules/
+
 http://www.jianshu.com/p/1682b91756b1
+
 http://morning.work/page/maintainable-nodejs/getting-started-with-eslint.html
